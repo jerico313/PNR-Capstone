@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Manrope:wght@600;800&display=swap');
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    background: rgb(255,116,0);
+background: linear-gradient(0deg, rgba(255,116,0,1) 0%, rgba(255,195,11,1) 100%);
+    font-weight: 900;
+}
+
+.sidebar a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    display: block;
+    transition: padding-left 0.2s ease-in-out;
+    -moz-transition: padding-left 0.2s ease-in-out;
+    -webkit-transition: padding-left 0.2s ease-in-out;
+    -o-transition: padding-left 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+    background-color: rgb(205, 93, 3);
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+    border-radius: 6px;
+    color: #FFF;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 13px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 205px;
+}
+.contents {
+    padding-bottom: 90px;
+}
+
+body {
+    background-color: lightgray;
+}
+
+
+hr {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-box {
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.yellow-box {
+    background-color: #FFC30B;
+    border-radius: 15px 15px 0px 0px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px 0 10px;
+}
+
+.blue-box {
+    background-color: #FFF;
+    border-radius: 0px 0px 15px 15px;
+    height: auto;
+}
+
+.table {
+    width: 94%;
+    margin: 3%;
+    border-spacing: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px;
+}
+
+.bord {
+    border: 1px solid white !important;
+    background: #174793;
+    color: white;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: whitesmoke !important;
+    color: black !important;
+}
+
+/* Toggle button for small screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .content {
+        padding-top: 20px;
+    }
+}
+
+/* CSS */
+.button-20 {
+    appearance: button;
+    background-color: #174793;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+    border: 1px solid #174793;
+    border-radius: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Manrope !important;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-transform: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.button-20:focus:not(:focus-visible),
+.button-20:focus {
+    outline: 0;
+}
+
+.button-20:hover {
+    background-color: #153c7b;
+    border-color: #153c7b;
+}
+
+.button-20:focus {
+    background-color: #153c7b;
+    border-color: #153c7b;
+    box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:active {
+    background-color: #153c7b;
+    background-image: none;
+    border-color: #153c7b;
+    box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.button-20:active:focus {
+    box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:disabled {
+    background-image: none;
+    box-shadow: none;
+    opacity: .65;
+    pointer-events: none;
+}
+
+
+.modal-header {
+    border-radius: 15px 15px 0 0;
+    background-color: #FFC30B;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
